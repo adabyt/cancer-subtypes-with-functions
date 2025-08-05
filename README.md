@@ -1,15 +1,15 @@
-# 🧬 Multiclass Classification of Cancer Subtypes (Synthetic Dataset) using Functions
+# Multiclass Classification of Cancer Subtypes (Synthetic Dataset) using Functions
 
 This project demonstrates a **multiclass machine learning pipeline** using synthetic gene expression data to predict **breast cancer subtypes**:  
 **Basal-like**, **HER2-enriched**, **Luminal A**, and **Normal-like**.
 
 **This project is a refactored version of the [cancer-subtypes](https://github.com/adabyt/cancer-subtypes) repository, where redundant code has been replaced by a reusable function that performs all model evaluations shown below.**
 
-> ⚠️ _Note: This dataset is synthetic and randomly generated. The project serves as a proof of principle for multiclass classification workflows, not for biomedical inference._
+> _Note: This dataset is synthetic and randomly generated. The project serves as a proof of principle for multiclass classification workflows, not for biomedical inference._
 
 ---
 
-## 📊 Project Overview
+## Project Overview
 
 We evaluate and compare the performance of three machine learning models (unbalanced and balanced):
 
@@ -26,7 +26,7 @@ Each model is assessed using:
 
 ---
 
-## 🔧 Technologies Used
+## Technologies Used
 
 | Library        | Purpose                          |
 | -------------- | -------------------------------- |
@@ -38,28 +38,28 @@ Each model is assessed using:
 
 ---
 
-## 🧪 Models & Techniques
+## Models & Techniques
 
-### 📌 Baseline Models:
+### Baseline Models:
 
 - **Logistic Regression**
 - **Random Forest**
 - **HistGradientBoostingClassifier**
 
-### 🧮 Model Evaluation:
+### Model Evaluation:
 
 - Precision, Recall, F1-score
 - Accuracy and Weighted Averages
 - ROC AUC (One-vs-Rest)
 - Threshold optimisation via **Youden's J** (TPR - FPR)
 
-### ⚙️ Hyperparameter Tuning:
+### Hyperparameter Tuning:
 
 `GridSearchCV` was used to optimise the `HistGradientBoostingClassifier` with 5-fold cross-validation, scoring by **macro-averaged F1**.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -72,7 +72,7 @@ Each model is assessed using:
 
 ---
 
-## 🔍 Limitations
+## Limitations
 
 - The dataset is **synthetic** and does not represent real gene expression data.
 - **Normal-like** subtype consistently underperforms — illustrating challenges with class imbalance.
@@ -80,7 +80,7 @@ Each model is assessed using:
 
 ---
 
-## 💡 Future Directions
+## Future Directions
 
 - Use **real-world RNA-seq datasets** (e.g., TCGA, METABRIC).
 - Apply **SMOTE** or **ADASYN** to address minority classes.
@@ -89,7 +89,7 @@ Each model is assessed using:
 
 ---
 
-## 💾 How to Use
+## How to Use
 
 ```bash
 # Install dependencies
