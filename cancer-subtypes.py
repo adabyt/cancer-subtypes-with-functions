@@ -705,8 +705,8 @@ print(summary_hgbc)
 
 print("-"*100)  # Separator
 
-# 4. Hyperparamter Tuning
-print("---------- 4. Hyperparamter Tuning ----------")
+# 4. Hyperparameter Tuning
+print("---------- 4. Hyperparameter Tuning ----------")
 
 """
 Rationale:
